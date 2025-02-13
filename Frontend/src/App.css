@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* Prevent unnecessary scrolling on the entire page */
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+main .left {
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  /* Ensures text remains white */
+}
+
+.left .code {
+  flex-grow: 1;
+  background-color: rgb(24, 24, 24);
+  overflow: auto;
+  /* Enables scrolling if code is large */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  /* Ensures code text remains white */
+}
+
+/* Code editor styles */
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+  white-space: pre-wrap;
+  /* Prevents horizontal scrolling */
+  word-break: break-word;
+  color: white !important;
+  /* Forces white text inside code blocks */
+}
+
+/* Review Button */
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(0, 71, 31);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+  transition: 0.3s ease;
+}
+
+main .left .review:hover {
+  background-color: rgb(0, 90, 40);
+}
+
+/* Right Section */
+main .right {
+  background-color: rgb(52, 52, 52);
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+  /* Enables scrolling if data overflows */
+  word-wrap: break-word;
+  /* Breaks long words properly */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar Styles */
+main .right::-webkit-scrollbar,
+.left .code::-webkit-scrollbar {
+  width: 8px;
+}
+
+main .right::-webkit-scrollbar-thumb,
+.left .code::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+main .right::-webkit-scrollbar-thumb:hover,
+.left .code::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
