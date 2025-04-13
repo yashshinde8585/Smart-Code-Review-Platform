@@ -28,9 +28,6 @@ Built an **AI-powered code review platform** using the **MERN stack (MongoDB, Ex
 - 🔄 **Seamless Frontend-Backend Communication with Axios**  
   **Axios** is used for efficient and seamless communication between the React frontend and the Express backend, allowing for smooth data exchange and updates.
 
-- ⚡ **Version Control Integration**  
-  Integrates with GitHub, GitLab, or other version control systems for automatic code reviews triggered by code commits.
-
 ---
 
 ## 🧰 Tech Stack
