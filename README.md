@@ -47,7 +47,6 @@ Built an **AI-powered code review platform** using the **MERN stack (MongoDB, Ex
 - **PrismJS** – Syntax highlighting for code snippets
 - **Google Generative AI** – AI model integration for generating code suggestions
 - **Jest** – For unit and integration tests
-- **Docker** – Containerization for deployment
 - **dotenv** – Environment variable management
 
 ---
@@ -58,6 +57,5 @@ Built an **AI-powered code review platform** using the **MERN stack (MongoDB, Ex
 
 - Node.js & npm
 - MongoDB (local or cloud setup)
-- Python 3.x (for AI model integration)
 - Google Cloud API Key for Generative AI access
 
