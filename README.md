@@ -64,10 +64,3 @@ Built an **AI-powered code review platform** using the **MERN stack (MongoDB, Ex
 - Python 3.x (for AI model integration)
 - Google Cloud API Key for Generative AI access
 
-### Setup Instructions
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/smart-code-review-platform.git
-cd smart-code-review-platform
